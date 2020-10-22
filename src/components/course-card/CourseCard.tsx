@@ -18,7 +18,7 @@ const useStyles = makeStyles(() => ({
     width: '70vw',
     backgroundColor: 'white',
     color: '#9b5cc4',
-    margin: '2%',
+    margin: '1%',
     borderRadius: '10px',
     transition: 'all 0.3s cubic-bezier(.25, .8, .25, 1)',
     boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
