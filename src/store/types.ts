@@ -1,4 +1,4 @@
-import {FETCH_COURSES, FETCH_COURSES_FAILURE, FETCH_COURSES_SUCCESS} from './constants';
+import {FETCH_COURSES, FETCH_COURSES_FAILURE, FETCH_COURSES_SUCCESS, UPDATE_WISH_FLAG} from './constants';
 import {CourseModel} from '../api/course.model';
 
 export interface CoursesState {
@@ -21,6 +21,11 @@ interface FetchCoursesFailureAction {
   error: Error
 }
 
+interface UpdateWishFlagAction {
+  type: typeof UPDATE_WISH_FLAG,
+  courseId: number
+}
+
 export type CoursesActions = FetchCoursesAction
   | FetchCoursesSuccessAction
-  | FetchCoursesFailureAction;
+  | FetchCoursesFailureAction | UpdateWishFlagAction;

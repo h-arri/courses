@@ -1,4 +1,4 @@
-import {FETCH_COURSES, FETCH_COURSES_FAILURE, FETCH_COURSES_SUCCESS} from '../constants';
+import {FETCH_COURSES, FETCH_COURSES_FAILURE, FETCH_COURSES_SUCCESS, UPDATE_WISH_FLAG} from '../constants';
 import {ActionCreator} from 'redux';
 import {CoursesActions} from '../types';
 import {ThunkAction} from 'redux-thunk';
@@ -29,4 +29,9 @@ const initStore: ActionCreator<ThunkAction<void, Rootstate, unknown, CoursesActi
   }
 }
 
-export {initStore, fetchCourses, fetchCoursesSuccess, fetchCoursesFailure};
+const updateWishFlag: ActionCreator<CoursesActions> = (courseId: number) => ({
+  type: UPDATE_WISH_FLAG,
+  courseId
+});
+
+export {initStore, fetchCourses, fetchCoursesSuccess, fetchCoursesFailure, updateWishFlag};
