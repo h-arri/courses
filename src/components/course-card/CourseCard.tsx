@@ -8,7 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import {useDispatch} from 'react-redux';
 import {updateWishFlag} from '../../store/actions/courses';
 
-type CourseCardProps = {
+export type CourseCardProps = {
   course: CourseModel
 };
 
@@ -44,7 +44,7 @@ const CourseCard: React.FC<CourseCardProps> = props => {
 
   const classes = useStyles();
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     dispatch(updateWishFlag(courseId));
   }
 

@@ -3,6 +3,7 @@ module.exports = {
         es6: true,
         node: true,
         jest: true,
+        browser: true
     },
     extends: "eslint:recommended",
     parser: "@typescript-eslint/parser",
@@ -21,7 +22,6 @@ module.exports = {
             "error",
             { vars: "all", args: "after-used", ignoreRestSiblings: false },
         ],
-        "@typescript-eslint/explicit-function-return-type": "warn", // Consider using explicit annotations for object literals and function return types even when they can be inferred.
         "no-empty": "warn",
     },
 };

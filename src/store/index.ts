@@ -1,8 +1,8 @@
-import {combineReducers} from "redux";
-import {CoursesReducer} from "./reducers/courses";
+import {combineReducers} from 'redux';
+import {CoursesReducer} from './reducers/courses';
 
 export const rootReducer = combineReducers({
-    courses: CoursesReducer
+  courses: CoursesReducer
 });
 
 export type Rootstate = ReturnType<typeof rootReducer>;
