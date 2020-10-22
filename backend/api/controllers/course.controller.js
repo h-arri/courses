@@ -3,7 +3,11 @@ const Courses = db.courses;
 
 // Retrieve all Courses from the database.
 exports.findAll = (req, res) => {
-  Courses.find({})
+  // wip - below condition can be used to filter the courses based on the wishListFlag
+  const wishListFlag = req.query.wishListFlag;
+  const condition = wishListFlag !== undefined ? { 'wishListFlag': wishListFlag } : {};
+
+  Courses.find(condition)
     .then(data => res.send(data))
     .catch(err => {
       res.status(500).send({

@@ -2,6 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This also contains `backend` project which includes REST APIs
+
+### Backend
+Tech-stack: Node, express, MongoDB, mongoose
+
+#### How to run
+After cloning the repo, please `cd` into `backend`
+Run `npm i` to install the dependencies
+Run `node server.js` and go to [http://localhost:8080](http://localhost:8080) or use Postman to test
+
+### Frontend
+Tech-stack: Typescript, React, Redux, Redux-Thunk, Material-ui
+After cloning the repo, please `cd` into the project root
+Run `yarn install` to install the dependencies
+
 ## Available Scripts
 
 In the project directory, you can run:
