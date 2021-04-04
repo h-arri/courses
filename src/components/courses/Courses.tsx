@@ -26,7 +26,7 @@ const Courses: React.FC = () => {
 
   useEffect(() => {
     dispatch(initStore());
-  }, []);
+  }, [dispatch]);
 
   return (<><h2 className={classes.title}>Meine Kurse</h2>
     <List className={classes.root}>

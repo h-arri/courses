@@ -9,7 +9,7 @@ const App: React.FC = () => {
     <Provider store={store}>
       <div className='app'>
         <header className='app-header'>
-          <h1>Wehorse</h1>
+          <h1>Horses</h1>
         </header>
         <Courses/>
       </div>

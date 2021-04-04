@@ -1,7 +1,7 @@
 {
-  "name": "api",
+  "name": "horses-api",
   "version": "1.0.0",
-  "description": "Wehorse REST API",
+  "description": "Horses REST API",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
