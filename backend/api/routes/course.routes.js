@@ -1,7 +1,7 @@
 module.exports = app => {
   const courses = require('../controllers/course.controller.js');
 
-  var router = require('express').Router();
+  let router = require('express').Router();
 
   // Retrieve all Courses
   router.get('/', courses.findAll);

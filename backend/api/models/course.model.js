@@ -13,10 +13,8 @@ module.exports = mongoose => {
     return object;
   });
     
-  const Courses = mongoose.model(
+  return mongoose.model(
     'courses',
     schema
   );
-
-  return Courses;
 };
